@@ -1,0 +1,30 @@
+{
+    "name": "phpdt/ldt",
+    "description": "PHP Advanced Datatable in Laravel Framework >=5.4",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mouhammad Alaa Aldeen",
+            "email": "mhd.alaaaldeen@gmail.com"
+        }
+    ],
+    "autoload": {
+       "psr-4": {
+         "Phpdt\\Ldt\\": "src/"
+       }
+     },
+	 "extra": {
+       "laravel": {
+         "providers": [
+           "Phpdt\\Ldt\\LdtServiceProvider"
+         ]
+       }
+     },
+    "require": {
+      "php": ">=5.5.15",
+      "ext-json": "*"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+  }
