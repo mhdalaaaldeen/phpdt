@@ -21,7 +21,7 @@ if (isset($dt_obj->options['actions']) && !is_array($dt_obj->options['actions'])
 
 //disable order action column
 $between=false;
-if (isset($dt_obj->options['actions']) && is_array($dt_obj->options['actions'])  && count($dt_obj->options['actions'])) {
+if (isset($dt_obj->options['actions']) && is_array($dt_obj->options['actions'])  && count($dt_obj->options['actions'])>0) {
 
 
 	$between=true;
@@ -63,7 +63,10 @@ if ($between || empty($remove_sorting)){
 	foreach ($columns as $columnkey => $columnheader) {
 		echo '<th>' . $columnheader . '</th>';
 	}
-	if (isset($dt_obj->options['actions']) && is_array($dt_obj->options['actions'])   && count($dt_obj->options['actions'])) {
+	if (
+			isset($dt_obj->options['actions']) && is_array($dt_obj->options['actions'])   && count($dt_obj->options['actions'])>0
+		)
+	{
 		echo  '<th >Actions</th>';
 	}
 	?>
