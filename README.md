@@ -5,11 +5,15 @@ By "PHP Advanced Datatable" you can do editing, deletion and diaplay proccess on
 
 # Features:
 
-  - Ajax requests
+  - Ajax Requests
   - Filtters (Text, Select, Autocomplete, Tags)
-  - Actions (Link, Submit data,Submit Forms)
-  - Bulk Action
-  - Custom Query
+  - Link Actions
+  - Confirm Ajax Actions
+  - Edit Ajax Actions
+  - Add Ajax Actions
+  - Bulk Ajax Action
+  - Single Ajax Action
+  - Query Builder
   - Row transform
 
 # Installation 
