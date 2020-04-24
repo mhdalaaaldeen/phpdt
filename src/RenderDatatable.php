@@ -12,9 +12,11 @@ class RenderDatatable {
 
 	function render_add_buttons() {
 
-		if ( isset( $this->objDatatable->options['actions'] ) && ! empty( $this->objDatatable->options['actions'] ) && ( isset( $this->objDatatable->options['checkboxes'] ) && $this->objDatatable->options['checkboxes'] == TRUE ) ) {
+		if ( isset( $this->objDatatable->options['actions'] ) && ! empty( $this->objDatatable->options['actions'] )
+		) {
 			$actions = unserialize( $this->objDatatable->options['actions'] );
 			foreach ( $actions as $key => $action ) {
+
 				if ( ! method_exists( $action['class'], 'add_button' ) || $action['class']::INSERT_MODE != TRUE ) {
 					unset( $actions[ $key ] );
 				}
@@ -24,6 +26,8 @@ class RenderDatatable {
 		}
 
 		return view( 'phpdt::add_buttons', [ 'actions' => $actions ] );
+
+
 	}
 
 	function render_filters() {

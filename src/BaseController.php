@@ -111,7 +111,9 @@ class BaseController extends \App\Http\Controllers\Controller {
 
 		$order_by_click = FALSE;
 		foreach ( $orders as $order ) {
-			if ( $order['column'] == 0 ) {
+
+
+			if ( $order['dir'] =='UNSET' ) {
 				continue;
 			}
 
@@ -120,6 +122,9 @@ class BaseController extends \App\Http\Controllers\Controller {
 			} else {
 				$order_by_column = $array_col[ $order['column'] ];
 			}
+
+
+
 			$order_by_click = TRUE;
 			$querybuilder->orderBy( $order_by_column, $order['dir'] );
 		}

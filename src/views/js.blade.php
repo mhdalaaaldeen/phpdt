@@ -56,7 +56,7 @@
             datatable_ajaxload = a.attr("data-datatable_ajaxload"), console.log(a.attr("data-dataorder")), table = a.DataTable({
                 lengthChange: !1,
                 order: [
-                    [0, "desc"]
+                    [0, "UNSET"]
                 ],
                 columnDefs: JSON.parse(a.attr("data-columnDefs")),
                 pageLength: a.attr("data-pageLength"),

@@ -22,9 +22,12 @@ if (isset($dt_obj->options['actions']) && !is_array($dt_obj->options['actions'])
 //disable order action column
 $between=false;
 if (isset($dt_obj->options['actions']) && is_array($dt_obj->options['actions'])  && count($dt_obj->options['actions'])) {
+
+
 	$between=true;
 	$columns_data[] = '{ "data": "actions_columns" }';
-	$remove_sorting=$remove_sorting.' , ';
+	if (!empty($remove_sorting))
+		$remove_sorting=$remove_sorting.' , ';
 	$in =  count($columns_data) - 1;
 	$remove_sorting .= ' {"targets": ' . $in . ',"orderable": false}';
 }
