@@ -40,4 +40,4 @@ http://phpdt.me/
 
 
 License
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT](https://github.com/mhdalaaaldeen/phpdt/blob/master/License)
