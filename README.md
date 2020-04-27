@@ -1,7 +1,6 @@
 # PHP advanced datatable in laravel framework >=5.4
 
-By "PHP Advanced Datatable" you can do editing, deletion and diaplay proccess on your tables in your database with high speed and great speed that provides the programmer with effectiveness in the development of the project and provide great efficiency to the user
-
+By using "PHP Advanced DataTable /PHPDT/" you can create fantastic management pages with ajax requests, you can add a lot of filters types such as: text, select, autocomplete and tag, and build a lot of ajax actions such as: adding, editing and deleting, you can use these actions as bulk or single, all actions and filters works by ajax requests so, no need to reload your page. In addition, it is very easy to build datatable class, filters and actions
 
 # Features:
 
